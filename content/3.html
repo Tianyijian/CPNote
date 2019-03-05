@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>三.  · GitBook</title>
+        <title>三. 词法分析 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -131,7 +131,7 @@
                 <a href="3.html">
             
                     
-                    三. 
+                    三. 词法分析
             
                 </a>
             
@@ -169,7 +169,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >三. </a>
+        <a href=".." >三. 词法分析</a>
     </h1>
 </div>
 
@@ -184,7 +184,34 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x4E09;">&#x4E09;.</h1>
+                                <h1 id="&#x4E09;-&#x8BCD;&#x6CD5;&#x5206;&#x6790;">&#x4E09;. &#x8BCD;&#x6CD5;&#x5206;&#x6790;</h1>
+<p>&#x91CD;&#x70B9;&#xFF1A;&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x5668;&#x7684;    &#x8F93;&#x5165;&#x3001;&#x8F93;&#x51FA;&#xFF0C;&#x7528;&#x4E8E;&#x8BC6;&#x522B;&#x7B26;&#x53F7;&#x7684;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x56FE;&#x7684;&#x6784;&#x9020;</p>
+<p>&#x96BE;&#x70B9;&#xFF1A;&#x6839;&#x636E;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x56FE;&#x5B9E;&#x73B0;&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x5668;&#x7684;&#x8BBE;&#x8BA1;</p>
+<h2 id="1-&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x5668;&#x7684;&#x529F;&#x80FD;">1. &#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x5668;&#x7684;&#x529F;&#x80FD;</h2>
+<p>&#x8F93;&#x5165;&#x6E90;&#x7A0B;&#x5E8F;&#xFF0C;&#x8F93;&#x51FA;&#x5355;&#x8BCD;&#x7B26;&#x53F7;&#xFF08;token&#xFF09;</p>
+<h3 id="11-&#x5355;&#x8BCD;&#x7684;&#x5206;&#x7C7B;&#x4E0E;&#x8868;&#x793A;">1.1 &#x5355;&#x8BCD;&#x7684;&#x5206;&#x7C7B;&#x4E0E;&#x8868;&#x793A;</h3>
+<p>&#x5173;&#x952E;&#x5B57;&#x3001;&#x6807;&#x8BC6;&#x7B26;&#x3001;&#x5E38;&#x6570;&#x3001;&#x8FD0;&#x7B97;&#x7B26;&#x3001;&#x5206;&#x754C;&#x7B26;</p>
+<h3 id="12-&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x5668;&#x7684;&#x8F93;&#x51FA;">1.2 &#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x5668;&#x7684;&#x8F93;&#x51FA;</h3>
+<p>&#xFF08;&#x79CD;&#x522B;&#x7801;&#xFF0C;&#x5C5E;&#x6027;&#x503C;&#xFF09;&#x79CD;&#x522B;&#x7801;&#x53EF;&#x81EA;&#x4E3B;&#x8BBE;&#x8BA1;&#x7F16;&#x7801;&#x65B9;&#x6848;&#xFF1A;&#x6309;&#x5355;&#x8BCD;&#x79CD;&#x7C7B;&#xFF0C;&#x6309;&#x5355;&#x8BCD;&#x7279;&#x6027;</p>
+<p>&#x5173;&#x952E;&#x5B57;&#x3001;&#x754C;&#x7B26;&#x3001;&#x8FD0;&#x7B97;&#x7B26;&#x5355;&#x8BCD;&#x81EA;&#x8EAB;&#x5C5E;&#x6027;&#x4E3A;&#x7A7A;&#xFF1B;&#x6807;&#x8BC6;&#x7B26;&#x5355;&#x8BCD;&#x81EA;&#x8EAB;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x4E3A;&#x7B26;&#x53F7;&#x8868;&#x7684;&#x5165;&#x53E3;&#x6307;&#x9488;&#x3002;</p>
+<h3 id="13-&#x6E90;&#x7A0B;&#x5E8F;&#x7684;&#x8F93;&#x5165;&#x7F13;&#x51B2;&#x4E0E;&#x9884;&#x5904;&#x7406;">1.3 &#x6E90;&#x7A0B;&#x5E8F;&#x7684;&#x8F93;&#x5165;&#x7F13;&#x51B2;&#x4E0E;&#x9884;&#x5904;&#x7406;</h3>
+<p>&#x8D85;&#x524D;&#x641C;&#x7D22;&#x4E0E;&#x56DE;&#x9000;&#x3001;&#x7F13;&#x51B2;&#x533A;&#x3001;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#x7684;&#x5254;&#x9664;</p>
+<h3 id="14-&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x9636;&#x6BB5;&#x7684;&#x9519;&#x8BEF;&#x5904;&#x7406;">1.4 &#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x9636;&#x6BB5;&#x7684;&#x9519;&#x8BEF;&#x5904;&#x7406;</h3>
+<p>&#x53D1;&#x73B0;&#x4E0D;&#x6539;&#x6B63;&#xFF1A;&#x975E;&#x6CD5;&#x5B57;&#x7B26;&#x68C0;&#x67E5;&#x3001;&#x5173;&#x952E;&#x5B57;&#x62FC;&#x5199;&#x9519;&#x8BEF;&#x68C0;&#x67E5;&#x3001;&#x4E0D;&#x5C01;&#x95ED;&#x9519;&#x8BEF;&#x68C0;&#x67E5;&#x3001;&#x91CD;&#x590D;&#x8BF4;&#x660E;&#x68C0;&#x67E5;&#x3001;&#x9519;&#x8BEF;&#x56DE;&#x590D;&#x4E0E;&#x7EED;&#x7F16;&#x8BD1;&#x3002;</p>
+<h3 id="15-&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x5668;&#x7684;&#x4F4D;&#x7F6E;">1.5 &#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x5668;&#x7684;&#x4F4D;&#x7F6E;</h3>
+<p>&#x8BED;&#x6CD5;&#x5206;&#x6790;&#x5668;&#x4E3A;&#x4E2D;&#x5FC3;/&#x72EC;&#x7ACB;&#x7A0B;&#x5E8F;&#xFF0C;&#x4EE5;&#x6587;&#x4EF6;&#x7EC4;&#x7EC7;</p>
+<h2 id="2-&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x9636;&#x6BB5;&#x7684;&#x8BBE;&#x8BA1;&#x4E0E;&#x5B9E;&#x73B0;">2. &#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x9636;&#x6BB5;&#x7684;&#x8BBE;&#x8BA1;&#x4E0E;&#x5B9E;&#x73B0;</h2>
+<p>&#x6784;&#x9020;&#x8BC6;&#x522B;&#x5355;&#x8BCD;&#x7684;DFA&#xFF0C;&#x7F16;&#x5199;&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x7A0B;&#x5E8F;</p>
+<h2 id="3-&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x7A0B;&#x5E8F;&#x7684;&#x81EA;&#x52A8;&#x751F;&#x6210;">3. &#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x7A0B;&#x5E8F;&#x7684;&#x81EA;&#x52A8;&#x751F;&#x6210;</h2>
+<ul>
+<li>&#x5229;&#x7528;Lex&#x5EFA;&#x7ACB;&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x7A0B;&#x5E8F;</li>
+<li>Lex&#x4E8C;&#x4E49;&#x6027;&#x95EE;&#x9898;&#x7684;&#x4E24;&#x6761;&#x539F;&#x5219;&#xFF1A;&#x6700;&#x957F;&#x5339;&#x914D;&#x3001;&#x4F18;&#x5148;&#x5339;&#x914D;</li>
+</ul>
+<h2 id="4-&#x672C;&#x7AE0;&#x5C0F;&#x7ED3;">4. &#x672C;&#x7AE0;&#x5C0F;&#x7ED3;</h2>
+<ul>
+<li>&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x5668;&#x4F7F;&#x7528;&#x7F13;&#x51B2;&#x6280;&#x672F;&#xFF0C;&#x800C;&#x4E14;&#x5728;&#x5C06;&#x5B57;&#x7B26;&#x6D41;&#x8BFB;&#x5165;&#x7F13;&#x51B2;&#x533A;&#x65F6;&#xFF0C;&#x662F;&#x7ECF;&#x8FC7;&#x5254;&#x9664;&#x6CE8;&#x89E3;&#x3001;&#x65E0;&#x7528;&#x7A7A;&#x767D;&#x7B26;&#x7B49;&#x9884;&#x5904;&#x7406;&#x540E;&#x7684;&#x7ED3;&#x679C;&#xFF1B;</li>
+<li>&#x8BCD;&#x6CD5;&#x7684;&#x7B49;&#x4EF7;&#x63CF;&#x8FF0;&#x5F62;&#x5F0F;&#x6709;&#x6B63;&#x5219;&#x6587;&#x6CD5;&#x3001;&#x6709;&#x7A77;&#x72B6;&#x6001;&#x81EA;&#x52A8;&#x673A;&#x3001;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5176;&#x4E2D;&#x6709;&#x7A77;&#x72B6;&#x6001;&#x81EA;&#x52A8;&#x673A;&#x53EF;&#x4EE5;&#x7528;&#x72B6;&#x6001;&#x8F6C;&#x6362;&#x56FE;&#x8868;&#x793A;&#xFF1B;</li>
+</ul>
 
                                 
                                 </section>
@@ -224,7 +251,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"三. ","level":"1.4","depth":1,"previous":{"title":"二. 高级语言及其文法","level":"1.3","depth":1,"path":"content/2.md","ref":"content/2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/3.md","mtime":"2019-02-27T05:16:32.017Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-28T08:23:10.788Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"三. 词法分析","level":"1.4","depth":1,"previous":{"title":"二. 高级语言及其文法","level":"1.3","depth":1,"path":"content/2.md","ref":"content/2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/3.md","mtime":"2019-03-05T02:00:13.352Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-05T02:01:06.089Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
